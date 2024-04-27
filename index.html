@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz de Perguntas</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <div class="container">
+          <div class="header">
+            <h1>Quiz de Perguntas</h1>
+          </div>
+          <button id="show_card_box">Adicionar Cartão</button>
+          <button id="delete_cards">Deletar Cartão</button>
+        </div>
+      </header>
+      <section>
+        <div class="container">
+          <div class="create_card">
+            <h2>Criar Quiz</h2>
+            <label for="question">Pergunta</label>
+            <textarea id="question" maxlength="280"></textarea>
+            <label for="resposta" maxlength="280">Resposta</label>
+            <br />
+            <textarea id="answer"></textarea>
+            <div>
+              <button id="save_card">Salvar</button>
+              <button id="close_card_box">limpar</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section>
+        <div class="container">
+            <div id="flashcards"></div>
+        </div>
+      </section>
+    </main>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
